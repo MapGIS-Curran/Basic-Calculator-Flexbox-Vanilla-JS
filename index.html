@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>Calculator App Example</title>
+</head>
+
+<body>
+  <!--Build out the UI. First add a container.-->
+  <div class="container">
+    <!--Make the display its own element.-->
+    <div class="display"></div>
+    <div class="buttons">
+      <!--
+Add a data-num attribute to the HTML of our buttons, which will hold the value of that button. Why do we need to do this?! Why can I not get the value from the button text? Good question! This technique is used to seperate data from presentation. Take the example of the multiply sign. The text of the button is X but the value is actually *, since this is how we multiply in JavaScript. Using this approach means the text can be whatever we want, but the value never changes. e.g:
+
+
+-->
+      <button class="btn-number" data-num="1">1</button>
+      <button class="btn-number" data-num="2">2</button>
+      <button class="btn-number" data-num="3">3</button>
+      <button class="btn-operator" data-num="+">+</button>
+      <button class="btn-number" data-num="4">4</button>
+      <button class="btn-number" data-num="5">5</button>
+      <button class="btn-number" data-num="6">6</button>
+      <button class="btn-operator" data-num="-">-</button>
+      <button class="btn-number" data-num="7">7</button>
+      <button class="btn-number" data-num="8">8</button>
+      <button class="btn-number" data-num="9">9</button>
+      <button class="btn-operator" data-num="*">X</button>
+      <button class="btn-clear" data-num="C">C</button>
+      <button class="btn-number" data-num="0">0</button>
+      <button class="btn-equals" data-num="=">=</button>
+      <button class="btn-operator" data-num="/">/</button>
+    </div>
+</body>
+</html>
